@@ -1,0 +1,19 @@
+#wrapper{
+    text-align: center;    
+}
+#list{
+    height: 80%;
+    width: 80%;
+    border: thin solid black;
+    /*padding: 10px;*/
+    margin: auto;
+    margin-top: 10px;
+    overflow: auto;
+}
+ol li {
+    margin: 0px;
+}
+button{
+    width: 80%;
+    margin: 10%
+}

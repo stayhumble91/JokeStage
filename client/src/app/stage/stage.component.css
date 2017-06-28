@@ -1,0 +1,45 @@
+*{
+
+}
+#title{
+    display: inline-block;
+    width: 49%;
+}
+#logout{
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    text-align: right;
+}
+h1{
+    margin: 0px;
+}
+#stage{
+    border: thin solid black;
+    display: inline-block;
+    width: 70%;
+    height: 400px;
+    margin-bottom: 10px;
+}
+#queue{
+    border: thin solid black;
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    height: 400px;
+    margin-bottom: 10px;
+}
+#reaction{
+    border: thin solid black;
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+#audience{
+    border: thin solid black;
+    width: 50%;
+    height: 400px;
+    margin: auto;
+    
+}

@@ -1,0 +1,10 @@
+
+<div id="list">
+  <h4>Jokester Queue</h4>
+  <ol>
+    <li *ngFor="let user of queue">{{ user.username }}</li>
+  </ol>
+</div>
+
+<button (click)="join_queue()">Join Queue</button>
+

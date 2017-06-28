@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var fs = require('fs');
 var path = require('path');
 
-mongoose.connect('mongodb://localhost/joke_stage');
+mongoose.connect('mongodb://localhost/joke_stage03');
 
 
 let models_path = path.join(__dirname, './../models');

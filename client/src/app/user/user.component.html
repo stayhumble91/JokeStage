@@ -1,0 +1,35 @@
+<h1>Welcome to the JOKE STAGE</h1>
+
+<h2>Login here and be ready to participate in the show!</h2>
+
+
+<fieldset>
+    <legend>Register</legend>
+    <form class="register" #formData="ngForm" (submit)="register()">
+
+      <p><label for="username">username:</label>
+        <input type="text" name="username" required [(ngModel)]="user.username"></p>
+    
+      <p><label for="password">Password:</label>
+        <input type="password" name="password" required [(ngModel)]="user.password"></p>
+
+      <p><label for="password_confirmation">Confirm Password:</label>
+        <input type="password" name="password_confirmation" [(ngModel)]="confirmPW"></p>
+        <p *ngIf="(user.password !== confirmPW)" class="error"> Password Confirmation must match Password</p>
+
+      <input type="submit" name="button" [disabled]="!formData.form.valid" value="Register">
+    </form>
+  </fieldset>
+  
+  <fieldset>
+    <legend>Login</legend>
+    <form class="login" #formData="ngForm" (submit)="login()">
+      <p><label for="username">username:</label>
+        <input type="text" name="username" [(ngModel)]="returning_user.username"></p>
+      
+      <p><label for="password">Password:</label>
+        <input type="password" name="password" [(ngModel)]="returning_user.password"></p>
+      
+      <button type="submit" name="button">Login</button>
+    </form>
+  </fieldset>

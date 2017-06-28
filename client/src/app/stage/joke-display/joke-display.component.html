@@ -1,0 +1,5 @@
+<h2>On stage right now:  {{ jokester.username }}</h2>
+
+
+<button *ngIf="current_user.user_id === jokester.user_id" (click)="get_jokester()">Get Off Stage</button>
+<button  *ngIf="jokester.user_id === ''" (click)="get_jokester()">Get First Jokester</button>
