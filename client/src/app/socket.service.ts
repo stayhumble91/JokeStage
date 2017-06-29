@@ -8,7 +8,7 @@ import * as io from 'socket.io-client';
 
 @Injectable()
 export class SocketService {
-  private url = "http://34.210.143.187:8000"
+  private url = "http://35.165.129.219:8000"
   private socket
 
   constructor() { }
