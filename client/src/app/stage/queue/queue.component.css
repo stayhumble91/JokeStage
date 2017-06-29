@@ -1,5 +1,6 @@
 #wrapper{
     text-align: center;    
+    
 }
 #list{
     height: 80%;
@@ -15,5 +16,6 @@ ol li {
 }
 button{
     width: 80%;
-    margin: 10%
+    margin: 10%;
+    margin-top: 5px;
 }

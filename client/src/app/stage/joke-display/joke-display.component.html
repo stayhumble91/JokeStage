@@ -1,5 +1,23 @@
-<h2>On stage right now:  {{ jokester.username }}</h2>
 
+<div id="onStage">
+    <h2>On stage right now:  {{ jokester.username }}</h2>
+</div>
+<div id="queueChanger">
+    <button *ngIf="current_user.user_id === jokester.user_id" (click)="next_jokester()">Get Off Stage</button>
+    <button  *ngIf="jokester.user_id === ''" (click)="next_jokester()">Get Next Jokester</button>
+</div>
 
-<button *ngIf="current_user.user_id === jokester.user_id" (click)="get_jokester()">Get Off Stage</button>
-<button  *ngIf="jokester.user_id === ''" (click)="get_jokester()">Get First Jokester</button>
+<div >
+    <fieldset id="jokeDisplay">
+        <legend>Current Joke</legend>
+            {{ jokeDisplay }}
+    </fieldset>
+</div>
+<div id="jokeEntryDiv" *ngIf="current_user.user_id === jokester.user_id">
+    <form #formData="ngForm" (submit)="tell_joke()">
+        <textarea name="joke" class="jokeInput" cols="40" rows="2" [(ngModel)]="joke" required></textarea>
+        <input type="submit" name="submit" class="submit"value="Share Joke" [disabled]="!formData.form.valid">
+    </form>
+
+</div>
+

@@ -1,3 +1,48 @@
+*{
+    /*border: thin dotted red;*/
+}
+
 h2{
     margin: 5px 10px;
+}
+.jokeInput{
+    width: 100%;
+}
+.submit{
+    width: 100%;
+    /*margin: auto;*/
+}
+
+#jokeDisplay{
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    /*border: thin solid black;*/
+}
+
+#jokeEntryDiv{
+    width: 66%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#queueChanger{
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    width: 20%;
+    height: 40px;
+}
+
+button{
+    margin-top: 10px;
+    margin-left: auto;
+}
+
+#onStage{
+    display: inline-block;
+    width: 78%;
+    height: 40px;
+
 }

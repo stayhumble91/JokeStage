@@ -4,6 +4,10 @@ import { User } from './../../user/user';
 import { Queue } from './queue';
 import { QueueService } from './queue.service';
 
+import * as io from "socket.io-client"
+
+import { SocketService } from "./../../socket.service"
+
 @Component({
   selector: 'app-queue',
   templateUrl: './queue.component.html',
@@ -13,7 +17,7 @@ export class QueueComponent implements OnInit {
   current_user= {user_id: "", username: ""}
   queue: Array<any> = []
 
-  constructor( private _userService: UserService, private _queueService: QueueService ) { }
+  constructor( private _userService: UserService, private _queueService: QueueService, private _socketService: SocketService ) { }
 
   ngOnInit() {
     this._userService.check_status()
@@ -25,7 +29,7 @@ export class QueueComponent implements OnInit {
       })
       .catch(() => console.log("error retrieving users") )
 
-    this.get_queue()
+    this._socketService.get_queue().subscribe((queue: Array<any>) => this.queue = queue )
       
 
 
@@ -41,18 +45,19 @@ export class QueueComponent implements OnInit {
   }
 
   join_queue() {
-    this._queueService.join_queue(this.current_user)
-        .then(() => {console.log("user added to queue")})
-        .catch(() => console.log("user not added to queue"))
-    this.get_queue()
+    this._socketService.join_queue(this.current_user)
+    // this._queueService.join_queue(this.current_user)
+    //     .then(() => {console.log("user added to queue")})
+    //     .catch(() => console.log("user not added to queue"))
+    // this.get_queue()
   }
 
-  get_queue(){
-    this._queueService.get_queue()
-        .then (data => {
-          console.log("got data")
-          this.queue = data
-        })
-        .catch (() => { console.log("couldn't get the queue")})
-  }
+  // get_queue(){
+  //   this._queueService.get_queue()
+  //       .then (data => {
+  //         console.log("got data")
+  //         this.queue = data
+  //       })
+  //       .catch (() => { console.log("couldn't get the queue")})
+  // }
 }

@@ -14,6 +14,9 @@ import { JokeDisplayComponent } from './stage/joke-display/joke-display.componen
 import { AudienceComponent } from './stage/audience/audience.component';
 import { QueueService } from './stage/queue/queue.service';
 
+
+import { SocketService } from "./socket.service"
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +33,7 @@ import { QueueService } from './stage/queue/queue.service';
     FormsModule,
     HttpModule
   ],
-  providers: [UserService, QueueService],
+  providers: [UserService, QueueService, SocketService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
