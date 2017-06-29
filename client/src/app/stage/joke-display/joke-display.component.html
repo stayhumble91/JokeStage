@@ -3,8 +3,9 @@
     <h2>On stage right now:  {{ jokester.username }}</h2>
 </div>
 <div id="queueChanger">
-    <button *ngIf="current_user.user_id === jokester.user_id" (click)="next_jokester()">Get Off Stage</button>
-    <button  *ngIf="jokester.user_id === ''" (click)="next_jokester()">Get Next Jokester</button>
+    <button *ngIf="current_user.user_id === jokester.user_id || current_user.username === 'sbishop7'" (click)="next_jokester()">Get Off Stage</button>
+    <button  *ngIf="jokester.user_id === ''" (click)="next_jokester()">Get Next Comic</button>
+    <!--<button  *ngIf="current_user.username === 'sbishop7'" (click)="next_jokester()">Kick Comic off the stage</button>-->
 </div>
 
 <div >

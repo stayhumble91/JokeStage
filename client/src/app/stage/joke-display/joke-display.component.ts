@@ -17,7 +17,7 @@ export class JokeDisplayComponent implements OnInit {
   current_user= {user_id: "", username: ""}
   // jokester = {user_id: "", username: ""}
   jokester = {}
-  jokeDisplay = "Joke is on you"
+  jokeDisplay = ""
   joke = ""
 
   constructor( private _userService: UserService, private _queueService: QueueService, private _socketService: SocketService ) { }
@@ -64,6 +64,7 @@ export class JokeDisplayComponent implements OnInit {
   tell_joke(){
     // console.log("Add junction")
     this._socketService.share_joke(this.joke)
+    this.joke = ""
   }
 
 

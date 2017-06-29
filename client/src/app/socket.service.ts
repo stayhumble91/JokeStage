@@ -64,4 +64,49 @@ export class SocketService {
     console.log("in server serive to share joke... " + data)
     this.socket.emit("share_joke", data)
   }
+
+  laugh(){
+    this.socket.emit("laugh")
+  }
+
+  boo(){ 
+    this.socket.emit("boo")
+  }
+
+  groan(){ 
+    this.socket.emit("groan")
+  }
+
+  chuckle(){ 
+    this.socket.emit("chuckle")
+  }
+
+  courtesyLaugh(){ 
+    this.socket.emit("courtesyLaugh")
+  }
+
+  heckle(){ 
+    this.socket.emit("heckle")
+  }
+
+  cricket(){ 
+    this.socket.emit("cricket")
+  }
+
+
+  
+
+  play_sound(){
+    let observable = new Observable(observer => {
+      this.socket = io(this.url)
+      this.socket.on("send_sound", (data) => {
+        observer.next(data)
+      })
+      return () => {
+        this.socket.disconnect()
+      }
+    })
+    return observable
+  }
+
 }

@@ -1,21 +1,29 @@
+*{
+    /*border: thin dotted red;*/
+}
 #wrapper{
     text-align: center;    
     
 }
 #list{
-    height: 80%;
+    height: 175px;
     width: 80%;
     border: thin solid black;
     /*padding: 10px;*/
     margin: auto;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     overflow: auto;
 }
 ol li {
+    text-align: left;
     margin: 0px;
 }
 button{
     width: 80%;
     margin: 10%;
     margin-top: 5px;
+    margin-bottom: 5px;
+}
+h4{
+    margin: 0px;
 }
