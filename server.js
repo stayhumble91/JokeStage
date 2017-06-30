@@ -47,7 +47,7 @@ app.groans = ["./../../assets/Groan01.wav", "./../../assets/Groan02.wav", "./../
 app.groan = ""
 app.heckles = ["./../../assets/DoesntDeserveABoo.wav", "./../../assets/DontKnowHowToLaugh.wav", "./../../assets/FaceLooksLikeAThumb.wav", "./../../assets/ForgotToLaugh.wav", "./../../assets/GetOffTheStage01.wav", "./../../assets/GetOffTheStage02.wav", "./../../assets/GetOffTheStage03.wav", "./../../assets/IPaidForThis.wav", "./../../assets/MommyWearsArmyBoots01.wav", "./../../assets/OhThisIsAwesome.wav", "./../../assets/PleaseGoHome.wav", "./../../assets/RaiseYourHand.wav", "./../../assets/ShavedMyLegs.wav", "./../../assets/SoBad02.wav", "./../../assets/SoundsLikeAFart.wav", "./../../assets/ThatIsJustAwful.wav", "./../../assets/ThatsHorrible01.wav", "./../../assets/ThatsCute.wav", "./../../assets/ThatsHorrible02.wav", "./../../assets/ThisSucks01.wav", "./../../assets/WasThatAJoke.wav", "./../../assets/WontWasteTomato.wav", "./../../assets/WeAreAllTheJoke.wav", "./../../assets/YouSuck01.wav", "./../../assets/YouSuck02.wav", "./../../assets/YouSuck03.wav"]
 app.heckle = ""
-app.cricket = "./../../assets/cricketSound.wav"
+app.cricket = "./../../assets/Cricket.mp3"
 
 
 
