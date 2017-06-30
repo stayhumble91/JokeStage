@@ -2,6 +2,18 @@
 
 <h2>Login here and be ready to participate in the show!</h2>
 
+  <fieldset>
+    <legend>Login</legend>
+    <form class="login" #formData="ngForm" (submit)="login()">
+      <p><label for="username">username:</label>
+        <input type="text" name="username" [(ngModel)]="returning_user.username"></p>
+      
+      <p><label for="password">Password:</label>
+        <input type="password" name="password" [(ngModel)]="returning_user.password"></p>
+      
+      <button type="submit" name="button">Login</button>
+    </form>
+  </fieldset>
 
 <fieldset>
     <legend>Register</legend>
@@ -21,15 +33,3 @@
     </form>
   </fieldset>
   
-  <fieldset>
-    <legend>Login</legend>
-    <form class="login" #formData="ngForm" (submit)="login()">
-      <p><label for="username">username:</label>
-        <input type="text" name="username" [(ngModel)]="returning_user.username"></p>
-      
-      <p><label for="password">Password:</label>
-        <input type="password" name="password" [(ngModel)]="returning_user.password"></p>
-      
-      <button type="submit" name="button">Login</button>
-    </form>
-  </fieldset>

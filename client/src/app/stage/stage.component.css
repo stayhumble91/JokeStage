@@ -20,6 +20,7 @@ h1{
     width: 100%;
     height: 250px;
     margin-bottom: 10px;
+    box-shadow: 10px 10px 5px #888888;
 }
 #queue{
     border: thin solid black;
@@ -28,6 +29,7 @@ h1{
     width: 100%;
     height: 250px;
     margin-bottom: 10px;
+    box-shadow: 10px 10px 5px #888888;
 }
 #reaction{
     border: thin solid black;
@@ -35,6 +37,7 @@ h1{
     /*height: 200px;*/
     margin: auto;
     margin-bottom: 10px;
+    box-shadow: 10px 10px 5px #888888;
 }
 #audience{
     border: thin solid black;

@@ -1,15 +1,14 @@
-<h3 *ngIf="joke.length > 0">React to the joke...<h3>
-<button *ngIf="joke.length > 0" (click)="laugh()">Laugh</button>
-
-<button *ngIf="joke.length > 0" (click)="boo()">Boo</button>
-
-
-<button *ngIf="joke.length > 0" (click)="groan()">Groan</button>
-
-<button *ngIf="joke.length > 0" (click)="chuckle()">Chuckle</button>
-
-<button *ngIf="joke.length > 0" (click)="courtesyLaugh()">Courtesy Laugh</button>
-
-<button *ngIf="joke.length > 0" (click)="heckle()">Heckle</button>
-
-<button *ngIf="joke.length > 0" (click)="cricket()">Crickets</button>
+<div id="wrapper" *ngIf="joke.length > 0">
+    <h3>React to the joke...</h3>
+        
+    <div id="buttons">
+        <button *ngIf="joke.length > 0" (click)="laugh()">Laugh</button>
+        <button *ngIf="joke.length > 0" (click)="chuckle()">Chuckle</button>
+        <button *ngIf="joke.length > 0" (click)="courtesyLaugh()">Courtesy Laugh</button>
+        <button *ngIf="joke.length > 0" (click)="groan()">Groan</button>
+        <button *ngIf="joke.length > 0" (click)="boo()">Boo</button>
+        <button *ngIf="joke.length > 0" (click)="heckle()">Heckle</button>
+        <button *ngIf="joke.length > 0" (click)="cricket()">Crickets</button>
+    </div>
+    <img src="./../../../assets/joke.jpg" alt="joke image" class="pics">
+</div>

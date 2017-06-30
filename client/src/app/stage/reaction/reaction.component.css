@@ -4,6 +4,26 @@
 }    
 button{
     margin: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    /*margin-top: 5px;
+    margin-bottom: 5px;*/
+}
+.pics{
+    height: 150px;
+    box-shadow: 5px 5px 2px black;
+    margin: 10px;
+}
+#buttons{
+    display: inline-block;
+    vertical-align: top;
+    padding: 75px;
+    
+}
+
+#wrapper{
+    background: brown; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, brown, tan); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, brown, tan); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, brown, tan); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, brown, tan); /* Standard syntax */  
+    height: 100%;
 }
